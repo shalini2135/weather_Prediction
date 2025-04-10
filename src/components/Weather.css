@@ -1,0 +1,163 @@
+/* .weather{
+    place-self:center;
+    padding:40px;
+    border-radius:10px;
+    background-image:linear-gradient(45deg,#2f4680,#500ae4);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.search-bar {
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .search-bar input {
+    margin-right: 10px;
+    padding: 5px; /* Optional: Makes the input box look nicer */
+  /*  height:none;
+    outline:none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color:#626262;
+    background:#ebfffc;
+    font-size:18px;
+  }
+  .weather-icon{
+    width:150px;
+    margin:30px 0;
+  }
+  .temperature{
+    color:#fff;
+    font-size:80px;
+    line-height:1;
+  }
+  .Location{
+    color:#fff;
+    font-size:30px;
+  }
+.weather-data{
+    width:100%;
+    margin-top:40px;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+}
+.weather-data .col{
+    display:flex;
+    align-items: flex-start;
+    gap:12px;
+    font-size:22px;
+} */
+.weather {
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Optional: Limit the width to keep things compact */
+    margin: auto; /* Centers the container */
+}
+
+.search-bar {
+    display: flex; 
+    align-items: center;
+    width: 100%; /* Makes search bar take full width */
+    justify-content: center; /* Centers the search bar */
+    margin-bottom: 20px; /* Adds space below the search bar */
+}
+
+.search-bar input {
+    margin-right: 10px;
+    padding: 5px;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+    border: none; /* Removes border */
+    width: 70%; /* Adjusts width of the input */
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px 0;
+}
+
+.temperature {
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0; /* Removes default margin */
+}
+
+.Location {
+    color: #fff;
+    font-size: 30px;
+    margin: 0; /* Removes default margin */
+    margin-bottom: 20px; /* Adds space below the location */
+}
+
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; /* Adds some padding to the sides */
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col img {
+    width: 40px; /* Adjusts icon size */
+    height: 40px;
+}
+
+.weather-data .col div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.weather-data .col span{
+    display:block;
+    font-size:16px;
+}
+.weather-data .col img{
+    width:26px;
+    margin-top: 10px;
+}
+.predict-button {
+    display: block;
+    margin: 20px auto; /* Centers the button horizontally */
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4f46e5; /* Match the purple theme */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 80%; /* Make it responsive to card width */
+    max-width: 300px; /* Set a max width for larger screens */
+  }
+  
+  .predict-button:hover {
+    background-color: #4338ca; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+  
+  .predict-button:active {
+    background-color: #3730a3; /* Even darker shade on click */
+    transform: scale(0.98); /* Button depresses on click */
+  }
+  
